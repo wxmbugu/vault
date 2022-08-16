@@ -36,7 +36,7 @@ run server:
 client setup:
 ```
 git clone https://github.com/Wambug/vaul-client
-mv -r vaul-client /path/to/templates/
+mv -r vaul-client /path/to/templates/vaul-client
 ```
 
 start client:
