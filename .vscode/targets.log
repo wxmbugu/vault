@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Aug 15 20:38:37 2022
+# Make data base, printed on Tue Aug 16 08:14:35 2022
 
 # Variables
 
@@ -25,7 +27,7 @@ KONSOLE_DBUS_SERVICE = :1.34
 # environment
 VSCODE_CWD = /home/steve/go/src/github.com/secret-vault
 # environment
-GPG_TTY = /dev/pts/6
+GPG_TTY = /dev/pts/11
 # environment
 WINDOWID = 52428807
 # default
@@ -109,7 +111,7 @@ SNAP_REEXEC =
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 187297
+VSCODE_PID = 243634
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -219,7 +221,7 @@ SNAP_DATA = /var/snap/code/104
 # environment
 SNAP_CONTEXT = _2yIth8VFw7VmIaNI-NnYIv8WPjxT0JBHNtWTFGULmKBrZBAZdeH
 # environment
-KONSOLE_DBUS_SESSION = /Sessions/9
+KONSOLE_DBUS_SESSION = /Sessions/15
 # environment
 MANAGERPID = 43281
 # environment
@@ -273,7 +275,7 @@ SUFFIXES :=
 # environment
 QT_AUTO_SCREEN_SCALE_FACTOR = 0
 # environment
-_P9K_TTY = /dev/pts/6
+_P9K_TTY = /dev/pts/11
 # environment
 VSCODE_CLI = 1
 # environment
@@ -281,11 +283,12 @@ ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 SNAP_COMMON = /var/snap/code/common
 # environment
-SHELL_SESSION_ID = 371fa557cbc9463ba10db4d547db194c
+SHELL_SESSION_ID = 450c11ebb1a849e08e98a417563cd969
 # environment
 KDE_SESSION_VERSION = 5
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+ 
 # environment
 KDE_FULL_SESSION = true
 # environment
@@ -293,9 +296,6 @@ SNAP_USER_DATA = /home/steve/snap/code/104
 # environment
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # variable set hash-table stats:
- 
-make: *** No rule to make target 'all'.  Stop.
-
 # Load=141/1024=14%, Rehash=0, Collisions=10/171=6%
 
 # Pattern-specific Variable Values
@@ -304,9 +304,9 @@ make: *** No rule to make target 'all'.  Stop.
 
 # Directories
 
-# . (device 66307, inode 5917236): 22 files, no impossibilities.
+# . (device 66307, inode 5917236): 25 files, no impossibilities.
 
-# 22 files, no impossibilities in 1 directories.
+# 25 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -333,7 +333,7 @@ create_vault_table:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-15 01:33:30.569055575
+#  Last modified 2022-08-16 07:04:24.029890328
 #  File has been updated.
 #  Successfully updated.
 
@@ -350,7 +350,7 @@ migrateup:
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 10):
-	migrate -path . -database "postgresql://postgres:secret@localhost:5432/vault?sslmode=disable" -verbose up
+	migrate -path . -database "postgres://mpxaqnjcqewmve:849658d51852ea38573b12b5d2cb5973760507f4beb29638707a29071418771f@ec2-44-205-112-253.compute-1.amazonaws.com:5432/d58gq8lh7l5ru2" -verbose up
 
 # Not a target:
 .DEFAULT:
@@ -394,12 +394,12 @@ createdb:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 34 / storage = 353 B / avg = 10 B
-# current buf: size = 8162 B / used = 353 B / count = 34 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 37 / storage = 398 B / avg = 10 B
+# current buf: size = 8162 B / used = 398 B / count = 37 / avg = 10 B
 
-# strcache performance: lookups = 50 / hit rate = 32%
+# strcache performance: lookups = 53 / hit rate = 30%
 # hash-table stats:
-# Load=34/8192=0%, Rehash=0, Collisions=0/50=0%
-# Finished Make data base on Mon Aug 15 20:38:37 2022
+# Load=37/8192=0%, Rehash=0, Collisions=0/53=0%
+# Finished Make data base on Tue Aug 16 08:14:35 2022
 
  
