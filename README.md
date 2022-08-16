@@ -2,6 +2,12 @@
 
 This is a share secret api
 
+## Prerequisite
+- go
+- docker
+- make
+- migrate
+
 ## To get started:
 ```
 git clone https://github.com/Wambug/vault
