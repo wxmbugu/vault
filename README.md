@@ -10,8 +10,26 @@ build :
 ```
 go build .
 ```
-
+creatdb:
+```
+make creatdb
+```
+migrations:
+```
+make migrateup
+```
 run server:
 ```
 ./secret-vault
+```
+
+client setup:
+```
+git clone https://github.com/Wambug/vaul-client
+mv -r vaul-client /path/to/templates/frontend
+```
+
+start client:
+```
+make client
 ```
