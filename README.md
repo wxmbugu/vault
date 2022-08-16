@@ -10,7 +10,7 @@ build :
 ```
 go build .
 ```
-setp db:
+setp postgres:
 ```
 make postgres
 ```
