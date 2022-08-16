@@ -43,7 +43,7 @@ func NewServer() *Server {
 	mux := mux.NewRouter()
 
 	//postgres://{username}:{password}@{hostname}:{port}/{database}?options
-	conn := SetupDb("postgres://mpxaqnjcqewmve:849658d51852ea38573b12b5d2cb5973760507f4beb29638707a29071418771f@ec2-44-205-112-253.compute-1.amazonaws.com:5432/d58gq8lh7l5ru2")
+	conn := SetupDb("postgresql://postgres:secret@localhost:5432/vault?sslmode=disable")
 	services := NewService(conn)
 	server := Server{
 		Router:   mux,
