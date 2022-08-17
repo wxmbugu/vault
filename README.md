@@ -30,7 +30,7 @@ make migrateup
 ```
 run server:
 ```
-./secret-vault
+./vault
 ```
 
 client setup:
